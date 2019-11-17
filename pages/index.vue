@@ -9,16 +9,33 @@
         <button>Save</button>
         <button>Find</button>
       </div>
+      <div>
+        <ul>
+          <li v-for="(todo, index) in todos" :key="index">
+            <span>{{ todo.content }}</span>
+            <span>{{ todo.createtime }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Logo from '~/components/Logo.vue'
 
 export default {
+  date: () => {
+    return {
+      content: ''
+    }
+  },
   components: {
     Logo
+  },
+  computed: {
+    ...mapState(['todos'])
   }
 }
 </script>
