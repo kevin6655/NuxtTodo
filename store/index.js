@@ -58,7 +58,7 @@ const CREATETODOS = () => {
             stateobj.content === obj.content &&
             stateobj.createtime === obj.createtime
           ) {
-            alert('このレコードを削除します。=>' + stateobj.content)
+            alert('このレコードを削除します ' + stateobj.content)
             // 合致したものを削除する。
             state.todos.splice(index, 1)
             return
