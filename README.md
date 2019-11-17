@@ -1,6 +1,6 @@
 # vuefire
 
-todoappを作ってみた
+todoappを作ってみた  
 参考文献[【Nuxt.js】todoアプリを作成してみた①](https://qiita.com/ayapon/items/d93807e7699434279531)
 
 > My super Nuxt.js project
